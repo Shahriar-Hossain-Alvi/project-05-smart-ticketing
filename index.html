@@ -65,13 +65,13 @@
 
         <!-- banner part start -->
         <div>
-            <div class="hero rounded-2xl text-white" style="background-image: url(images/banner.png);">
+            <div class="hero lg:rounded-2xl text-white" style="background-image: url(images/banner.png);">
                 <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
                 <div class="hero-content text-center pt-20 pb-32">
                     <div class="max-w-2xl">
-                        <h1 class="mb-5 text-6xl font-extrabold">End-to-End Travel with <span class="text-[#1DD100]">P
+                        <h1 class="mb-5 text-2xl lg:text-6xl font-extrabold">End-to-End Travel with <br><span class="text-[#1DD100]">P
                                 Paribahan</span></h1>
-                        <p class="mb-8 font-inter text-lg">Yes, you can run unit tests and view the results directly
+                        <p class="mb-8 font-inter text-sm lg:text-lg">Yes, you can run unit tests and view the results directly
                             within the app. The integrated testing features allow for a streamlined .</p>
                         <button class="btn bg-[#1DD100] border-[#1DD100] font-bold text-xl text-[#030712]">Buy
                             Tickets</button>
@@ -118,20 +118,39 @@
     <!-- main part start -->
     <main>
         <!-- best offer part start -->
-        <section class="container mx-auto">
+        <section class="container mx-auto mb-28">
             <h2 class="text-4xl font-bold text-[#030712] text-center mb-12">Best offers for you</h2>
             <!-- coupons -->
-            <div class="flex justify-between font-inter bg-[#FFBF0F] items-center">
-                <div>
-                    <h2 class="font-black text-4xl text-[#030712CC]">15% OFF</h2>
-                    <h3 class="font-semibold text-xl text-[#030712CC]">on your next purchase</h3>
-                    <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
+            <div class="grid grid-cols-2 gap-6 mb-14">
+                <!-- 1st coupon -->
+                <div class="flex justify-between font-inter bg-[#FFBF0F] items-center px-14 rounded-3xl">
+                    <div class="">
+                        <h2 class="font-black text-4xl text-[#030712CC]">15% OFF</h2>
+                        <h3 class="font-semibold text-xl text-[#030712CC]">on your next purchase</h3>
+                        <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="cupon-devider">
+                    <div>
+                        <h1 class="text-3xl font-semibold text-[#030712] font-raleway">NEW15</h1>
+                        <h4 class="text-xl font-medium text-[#03071266]">Coupon Code</h4>
+                    </div>
                 </div>
-                <img src="images/cupon-devider.png" alt="cupon-devider">
-                <div>
-                    <h1 class="text-3xl font-semibold text-[#030712] font-raleway">NEW15</h1>
-                    <h4 class="text-xl font-medium text-[#03071266]">Coupon Code</h4>
+                <!-- 2nd coupon -->
+                <div class="flex justify-between font-inter bg-[#FFBF0F] items-center px-14 rounded-3xl">
+                    <div class="">
+                        <h2 class="font-black text-4xl text-[#030712CC]">20% OFF</h2>
+                        <h3 class="font-semibold text-xl text-[#030712CC]">on your next purchase</h3>
+                        <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="cupon-devider">
+                    <div>
+                        <h1 class="text-3xl font-semibold text-[#030712] font-raleway">Couple 20</h1>
+                        <h4 class="text-xl font-medium text-[#03071266]">Coupon Code</h4>
+                    </div>
                 </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="btn mx-auto">See All Offers</button>
             </div>
             <!-- coupons -->
         </section>
