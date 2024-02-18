@@ -86,9 +86,13 @@ for(let i=0; i<seatID.length; i++){
             flag = true;
         }
     });
-
 }
 
+// show alert if form is not filled up
+const passengerForm = document.getElementById('passenger form');
+const passengerName = document.getElementById('passenger-name');
+const passengerPhone = document.getElementById('passenger-phone');
+const passengerMail = document.getElementById('passenger-email');
 
 
 

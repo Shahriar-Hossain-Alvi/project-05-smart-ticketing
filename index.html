@@ -167,10 +167,12 @@
     <!-- main part start -->
     <main class="bg-[#F7F8F8]">
         <!-- P.H Paribahan part start -->
-        <section id="ph-paribahan" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[70px] pt-28">
+        <section id="ph-paribahan" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[70px] pt-8 lg:pt-28">
             <div class="container mx-auto">
-                <h2 class="text-4xl font-bold text-[#030712] text-center mb-6">P.H Paribahan</h2>
-                <p class="text-lg text-center font-inter w-1/2 mx-auto text-[#03071299] mb-12">Yes, you can run unit
+                <h2 class="text-2xl lg:text-4xl font-bold text-[#030712] text-center mb-6">P.H Paribahan</h2>
+                <p
+                    class="text-base lg:text-lg text-center font-inter w-[90%] lg:w-1/2 mx-auto text-[#03071299] mb-7 lg:mb-12">
+                    Yes, you can run unit
                     tests
                     and view the results directly within the app. The integrated testing features allow for a
                     streamlined .
@@ -178,14 +180,14 @@
 
                 <!-- PH info start -->
                 <div class="grid grid-cols-12 gap-6 bg-white rounded-3xl mb-7">
-                    <div class="col-span-8 p-7">
+                    <div class="col-span-12 lg:col-span-8 p-3 lg:p-7">
                         <!-- info heading -->
-                        <div class="flex justify-between">
-                            <div class="flex justify-between gap-3">
+                        <div class="flex flex-col lg:flex-row justify-between">
+                            <div class="flex lg:justify-between gap-3 mb-4 lg:mb-0">
                                 <img src="images/bus-logo.png" alt="bus-logo">
                                 <div>
-                                    <h2 class="text-3xl font-bold text-[#030712]">Greenline Paribahan</h2>
-                                    <p class="text-lg font-inter text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                    <h2 class="text-lg lg:text-3xl font-bold text-[#030712]">Greenline Paribahan</h2>
+                                    <p class="text-base lg:text-lg font-inter text-[#03071299]">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
                             <button class="btn bg-[#1DD10026]">
@@ -202,7 +204,7 @@
                             <h3
                                 class="font-semibold text-lg text-[#03071299] border-b border-dashed border-[#03071233] py-6 mb-6">
                                 Departure Time <span class="text-[#030712] float-right">9:00 PM</span></h3>
-                            <div class="text-center space-x-6">
+                            <div class="text-center space-y-6 lg:space-y-0 lg:space-x-6">
                                 <button class="btn font-inter font-medium text-[#030712CC] bg-[#0307120D]">Boarding
                                     Point - Laxmipur</button>
                                 <button class="btn font-inter font-medium text-[#030712CC] bg-[#0307120D]">Dropping
@@ -212,14 +214,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1">
+                    <div class="col-span-1 hidden lg:block">
                         <img src="images/info-devider.png" alt="info-divider">
                     </div>
                     <!-- info right -->
-                    <div class="col-span-3 flex flex-col items-center justify-center">
+                    <div class="col-span-12 lg:col-span-3 flex flex-col items-center justify-center">
                         <img src="images/fare.png" alt="fare">
                         <h2 class="text-3xl font-bold text-[#030712] mt-6 mb-2">550 Taka</h2>
-                        <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
+                        <p class="text-2xl font-semibold text-[#03071299] pb-5 lg:pb-0">Per Seat</p>
                     </div>
                 </div>
                 <!-- PH info start -->
@@ -230,9 +232,9 @@
 
         <!-- P.H main part start -->
         <section class="bg-[#F7F8F8] mt-6">
-            <div class="pt-14 bg-white p-8 flex container mx-auto rounded-3xl">
+            <div class="pt-14 bg-white p-4 lg:p-8 flex flex-col lg:flex-row container mx-auto rounded-3xl">
                 <!-- ph-main left -->
-                <div class="border-r border-dashed border-[#0307124D] pr-8 w-[60%]">
+                <div class="lg:border-r lg:border-dashed lg:border-[#0307124D] lg:pr-8 w-full lg:w-[60%]">
                     <h3 class="text-2xl font-raleway font-semibold pb-6 border-b border-dashed border-[#03071233]">
                         Select Your Seat
                     </h3>
@@ -249,7 +251,7 @@
                     </div>
 
                     <!-- seat layout start -->
-                    <div id="seat-layout-container" class="space-y-6 font-inter text-lg font-medium">
+                    <div id="seat-layout-container" class="space-y-6 font-inter text-sm lg:text-lg font-medium">
                         <div class="mt-6 flex justify-between">
                             <div></div>
                             <div></div>
@@ -258,70 +260,70 @@
                                 <img src="images/tabler-icon-steering-wheel.svg" alt="steering-wheel">
                             </div>
                         </div>
-                        <div class="flex justify-between gap-8">
-                            <p class="px-10 py-4">A</p>
-                            <h2 id="A1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">A1</h2>
-                            <h2 id="A2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">A2</h2>
-                            <h2 id="A3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">A3</h2>
-                            <h2 id="A4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">A4</h2>
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
+                            <p class="px-4 py-4 lg:px-10 lg:py-4">A</p>
+                            <h2 id="A1" class="bg-[#0307121A] px-4 py-4 lg:px-10 lg:py-4 rounded-xl cursor-pointer">A1</h2>
+                            <h2 id="A2" class="bg-[#0307121A] px-4 py-4 lg:px-10 lg:py-4 rounded-xl cursor-pointer">A2</h2>
+                            <h2 id="A3" class="bg-[#0307121A] px-4 py-4 lg:px-10 lg:py-4 rounded-xl cursor-pointer">A3</h2>
+                            <h2 id="A4" class="bg-[#0307121A] px-4 py-4 lg:px-10 lg:py-4 rounded-xl cursor-pointer">A4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">B</p>
                             <h2 id="B1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">B1</h2>
                             <h2 id="B2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">B2</h2>
                             <h2 id="B3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">B3</h2>
                             <h2 id="B4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">B4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">C</p>
                             <h2 id="C1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">C1</h2>
                             <h2 id="C2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">C2</h2>
                             <h2 id="C3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">C3</h2>
                             <h2 id="C4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">C4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">D</p>
                             <h2 id="D1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">D1</h2>
                             <h2 id="D2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">D2</h2>
                             <h2 id="D3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">D3</h2>
                             <h2 id="D4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">D4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">E</p>
                             <h2 id="E1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">E1</h2>
                             <h2 id="E2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">E2</h2>
                             <h2 id="E3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">E3</h2>
                             <h2 id="E4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">E4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">F</p>
                             <h2 id="F1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">F1</h2>
                             <h2 id="F2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">F2</h2>
                             <h2 id="F3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">F3</h2>
                             <h2 id="F4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">F4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">G</p>
                             <h2 id="G1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">G1</h2>
                             <h2 id="G2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">G2</h2>
                             <h2 id="G3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">G3</h2>
                             <h2 id="G4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">G4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">H</p>
                             <h2 id="H1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">H1</h2>
                             <h2 id="H2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">H2</h2>
                             <h2 id="H3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">H3</h2>
                             <h2 id="H4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">H4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">I</p>
                             <h2 id="I1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">I1</h2>
                             <h2 id="I2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">I2</h2>
                             <h2 id="I3" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">I3</h2>
                             <h2 id="I4" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">I4</h2>
                         </div>
-                        <div class="flex justify-between gap-8">
+                        <div class="flex lg:justify-between gap-1 lg:gap-8">
                             <p class="px-10 py-4">J</p>
                             <h2 id="J1" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">J1</h2>
                             <h2 id="J2" class="bg-[#0307121A] px-10 py-4 rounded-xl cursor-pointer">J2</h2>
@@ -368,17 +370,20 @@
 
 
                     <!-- passenger form start -->
-                    <div>
+                    <div class="passenger-form ">
                         <h3 class="pb-4 text-base font-semibold text-[#030712]">Passenger Name*</h3>
-                        <input class="mb-6 border border-[#0307121A] py-5 px-6 w-full rounded-3xl text-[#03071266]"
+                        <input id="passenger-name"
+                            class="mb-6 border border-[#0307121A] py-5 px-6 w-full rounded-3xl text-[#03071266]"
                             type="text" placeholder="Enter your name">
 
                         <h3 class="pb-4 text-base font-semibold text-[#030712]">Phone Number*</h3>
-                        <input class="mb-6 border border-[#0307121A] py-5 px-6 w-full rounded-3xl text-[#03071266]"
+                        <input id="passenger-phone"
+                            class="mb-6 border border-[#0307121A] py-5 px-6 w-full rounded-3xl text-[#03071266]"
                             type="text" placeholder="Enter your phone number">
 
                         <h3 class="pb-4  text-base font-semibold text-[#030712]">Email ID</h3>
-                        <input class="mb-6 border border-[#0307121A] py-5 px-6 w-full rounded-3xl text-[#03071266]"
+                        <input id="passenger-email"
+                            class="mb-6 border border-[#0307121A] py-5 px-6 w-full rounded-3xl text-[#03071266]"
                             type="text" placeholder="Enter your email id">
 
                         <!-- Open the modal using ID.showModal() method -->
@@ -390,11 +395,14 @@
                             <div class="modal-box w-11/12 max-w-5xl text-center py-14 px-20">
                                 <img class="mx-auto" src="images/success.png" alt="success-image">
                                 <h3 class="font-bold text-2xl font-roboto py-9 text-[#27AE60]">SUCCESS!</h3>
-                                <p class="text-[#4A4A4A] font-roboto text-xl font-medium">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. </p>
-                                <p class="text-[#4A4A4A] font-roboto text-xl font-light mb-5">Shortly you will find a confirmation in your email.</p>
+                                <p class="text-[#4A4A4A] font-roboto text-xl font-medium">Thank you for Booking Our Bus
+                                    Seats. We are working hard to find the best service and deals for you. </p>
+                                <p class="text-[#4A4A4A] font-roboto text-xl font-light mb-5">Shortly you will find a
+                                    confirmation in your email.</p>
                                 <div class="modal-action flex justify-center">
                                     <form method="dialog">
-                                        <button class="btn btn-lg btn-wide rounded-3xl font-roboto text-xl font-semibold text-white bg-[#27AE60]">Continue</button>
+                                        <button
+                                            class="btn btn-lg btn-wide rounded-3xl font-roboto text-xl font-semibold text-white bg-[#27AE60]">Continue</button>
                                     </form>
                                 </div>
                             </div>
