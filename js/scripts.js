@@ -1,6 +1,6 @@
 //f-1: click banner button to go to ph paribahan section
 const bannerBtn = document.getElementById('banner-btn');
-bannerBtn.addEventListener('click', function(){
+bannerBtn.addEventListener('click', function () {
     const phParibahan = document.getElementById('ph-paribahan');
     phParibahan.scrollIntoView();
 })
@@ -18,22 +18,22 @@ let totalPrice = 0;
 let grandTotal = 0;
 let discountPrice = 0;
 
-for(let i=0; i<seatID.length; i++){
+for (let i = 0; i < seatID.length; i++) {
     const seats = seatID[i];
     let flag = false;
 
 
     // on single click
-    seats.addEventListener('click', function(){
+    seats.addEventListener('click', function () {
         //change color
         seats.style.backgroundColor = '#1DD100';
 
         //do not update counter if already clicked
-        if(flag === true){
+        if (flag === true) {
             selectedSeatCounterUpdater = selectedSeatCounterUpdater;
             seatLeft = seatLeft;
         }
-        else{
+        else {
             //update counter on clicked
             selectedSeatCounterUpdater++;
             selectedSeatCounter.innerText = selectedSeatCounterUpdater;
@@ -55,7 +55,7 @@ for(let i=0; i<seatID.length; i++){
             const span1 = document.createElement('span');
             span1.innerText = 'Economy';
             div2.appendChild(span1);
-            
+
 
             // add seat fare
             const div3 = document.createElement('div');
@@ -93,6 +93,22 @@ const passengerForm = document.getElementById('passenger form');
 const passengerName = document.getElementById('passenger-name');
 const passengerPhone = document.getElementById('passenger-phone');
 const passengerMail = document.getElementById('passenger-email');
+
+const btn = document.getElementById('apply-btn');
+btn.addEventListener('click', function () {
+    //get input value
+    const couponCode = document.getElementById('input-field').value;
+
+    if(couponCode === 'NEW15'){
+        const discountElement = document.getElementById('discount-price');
+        const discountAmount = totalPrice * 0.15;
+        discountElement.innerText = discountAmount;
+        console.log(discountAmount);
+
+        //grand total after discount
+        
+    }
+})
 
 
 
