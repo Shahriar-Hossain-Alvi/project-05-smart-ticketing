@@ -6,10 +6,14 @@ bannerBtn.addEventListener('click', function(){
 })
 
 //f-2: click seat to change color, update seat counter
+
 const seatLayoutContainer = document.getElementById('seat-layout-container');
 const selectedSeatCounter = document.getElementById('selected-seat-counter')
-let selectedSeatCounterUpdater = 0;
+const seatLeftId = document.getElementById('seat-left');
 const seatID = seatLayoutContainer.querySelectorAll('h2');
+let selectedSeatCounterUpdater = 0;
+let seatLeft = 40;
+
 for(let i=0; i<seatID.length; i++){
     const seats = seatID[i];
     let flag = false;
@@ -17,10 +21,13 @@ for(let i=0; i<seatID.length; i++){
         seats.style.backgroundColor = '#1DD100';
         if(flag === true){
             selectedSeatCounterUpdater = selectedSeatCounterUpdater;
+            seatLeft = seatLeft;
         }
         else{
             selectedSeatCounterUpdater++;
             selectedSeatCounter.innerText = selectedSeatCounterUpdater;
+            seatLeft--;
+            seatLeftId.innerText = seatLeft;
             flag = true;
         }
     });
