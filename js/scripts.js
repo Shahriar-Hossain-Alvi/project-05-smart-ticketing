@@ -11,12 +11,17 @@ const seatLayoutContainer = document.getElementById('seat-layout-container');
 const selectedSeatCounter = document.getElementById('selected-seat-counter')
 const seatLeftId = document.getElementById('seat-left');
 const seatID = seatLayoutContainer.querySelectorAll('h2');
+
 let selectedSeatCounterUpdater = 0;
 let seatLeft = 40;
+let totalPrice = 0;
+let grandTotal = 0;
+let discountPrice = 0;
 
 for(let i=0; i<seatID.length; i++){
     const seats = seatID[i];
     let flag = false;
+
 
     // on single click
     seats.addEventListener('click', function(){
@@ -67,7 +72,17 @@ for(let i=0; i<seatID.length; i++){
             listDivContainer.appendChild(div3);
             listDivContainer.classList.add('flex');
             listDivContainer.classList.add('justify-between');
-            
+
+            // calculate total price
+            const totalPriceField = document.getElementById('total-price');
+            totalPrice = selectedSeatCounterUpdater * 550;
+            totalPriceField.innerText = totalPrice;
+
+            //calculate grand total
+            const grandTotalField = document.getElementById('grand-total');
+            grandTotal = totalPrice - discountPrice;
+            grandTotalField.innerText = grandTotal;
+
             flag = true;
         }
     });
