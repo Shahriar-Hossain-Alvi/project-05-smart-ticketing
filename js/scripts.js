@@ -7,7 +7,7 @@ bannerBtn.addEventListener('click', function(){
 
 //f-2: click seat to change color
 const seatLayoutContainer = document.getElementById('seat-layout-container');
-let 
+
 const seatID = seatLayoutContainer.querySelectorAll('h2');
 for(let i=0; i<seatID.length; i++){
     const seats = seatID[i];
