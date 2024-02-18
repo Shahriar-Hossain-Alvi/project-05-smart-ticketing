@@ -10,7 +10,6 @@ bannerBtn.addEventListener('click', function(){
 const seatLayoutContainer = document.getElementById('seat-layout-container');
 const selectedSeatCounter = document.getElementById('selected-seat-counter')
 const seatLeftId = document.getElementById('seat-left');
-
 const seatID = seatLayoutContainer.querySelectorAll('h2');
 let selectedSeatCounterUpdater = 0;
 let seatLeft = 40;
@@ -38,11 +37,37 @@ for(let i=0; i<seatID.length; i++){
 
             //append seats in the side menu
             const selectedSeatList = document.getElementById('selected-seat-list');
-            const p = document.createElement('p');
+            // add seat name to the list
             const div = document.createElement('div');
-            const div2 = document.createElement('div');
+            selectedSeatList.appendChild(div);
+            const p = document.createElement('p');
             p.innerText = seats.innerText;
-            selectedSeatList.appendChild(p);
+            div.appendChild(p);
+
+            // add seat class
+            const div2 = document.createElement('div');
+            selectedSeatList.appendChild(div2);
+            const span1 = document.createElement('span');
+            span1.innerText = 'Economy';
+            div2.appendChild(span1);
+            
+
+            // add seat fare
+            const div3 = document.createElement('div');
+            selectedSeatList.appendChild(div3);
+            const span2 = document.createElement('span');
+            span2.innerText = '550';
+            div3.appendChild(span2);
+
+            // add 3 div into another div and add class display flex
+            const listDivContainer = document.createElement('div');
+            selectedSeatList.appendChild(listDivContainer);
+            listDivContainer.appendChild(div);
+            listDivContainer.appendChild(div2);
+            listDivContainer.appendChild(div3);
+            listDivContainer.classList.add('flex');
+            listDivContainer.classList.add('justify-between');
+            
             flag = true;
         }
     });
@@ -55,7 +80,7 @@ for(let i=0; i<seatID.length; i++){
 
 
 
-//on double click
+// on double click
 // seats.addEventListener('dblclick', function(){
 //     seats.style.backgroundColor = '#0307121A';
 //     if(flag === false){
