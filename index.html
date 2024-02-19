@@ -396,7 +396,7 @@
                             <input id="input-field" class="text-sm pl-5 rounded-l-3xl py-5 px-1 w-2/3" type="text"
                                 placeholder="Have any coupon?">
                             <button id="apply-btn"
-                                class="btn text-white text-sm bg-[#1DD100] rounded-r-3xl rounded-l-none -ml-2 w-1/3 btn-lg">Apply</button>
+                                class="btn text-white text-sm bg-[#1DD100] rounded-r-3xl rounded-l-none -ml-2 w-1/3 btn-lg" disabled>Apply</button>
                         </div>
                         <div id="discount-div" class="flex justify-between hidden">
                             <h2>Discount</h2>
@@ -426,8 +426,8 @@
                             class="mb-6 border border-[#0307121A] py-5 px-6 w-full rounded-3xl text-[#03071266]"
                             type="text" placeholder="Enter your email id">
 
-                        <!-- Open the modal using ID.showModal() method onclick="my_modal_1.showModal()" -->
-                        <button id="next-btn"
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="next-btn" onclick="my_modal_1.showModal()"
                             class="btn bg-[#1DD100] border-[#1DD100] font-bold text-xl text-white w-full btn-lg">
                             Next
                         </button>
