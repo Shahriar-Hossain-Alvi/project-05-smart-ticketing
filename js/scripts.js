@@ -1,11 +1,9 @@
-//f-1: click banner button to go to ph paribahan section
+//click banner button to go to ph paribahan section
 const bannerBtn = document.getElementById('banner-btn');
 bannerBtn.addEventListener('click', function () {
     const phParibahan = document.getElementById('ph-paribahan');
     phParibahan.scrollIntoView();
 })
-
-//f-2: click seat to change color, update seat counter
 
 const seatLayoutContainer = document.getElementById('seat-layout-container');
 const selectedSeatCounter = document.getElementById('selected-seat-counter')
@@ -97,7 +95,7 @@ for (let i = 0; i < seatID.length; i++) {
 
 //coupon apply part
 const btn = document.getElementById('apply-btn');
-
+//on single click
 btn.addEventListener('click', function () {
     //get input value
     const couponCode = document.getElementById('input-field').value;
@@ -121,11 +119,12 @@ btn.addEventListener('click', function () {
             grandTotal = totalPrice - discountPrice;
             grandTotalField.innerText = grandTotal;
             document.getElementById('input-field').value = '';
+
+            seats.style.backgroundColor = '#1DD100';
         }
         else if (couponCode === 'Couple 20') {
-            //disable coupon area after using 1 code
-            document.getElementById('input-field').setAttribute('disabled', true);
-            document.getElementById('apply-btn').setAttribute('disabled', true);
+            //hide coupon area after using 1 code
+            document.getElementById('coupon-area').classList.add('hidden');
 
             //calculate discount
             const discountElement = document.getElementById('discount-price');
