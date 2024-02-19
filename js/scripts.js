@@ -100,13 +100,48 @@ btn.addEventListener('click', function () {
     const couponCode = document.getElementById('input-field').value;
 
     if(couponCode === 'NEW15'){
-        const discountElement = document.getElementById('discount-price');
-        const discountAmount = totalPrice * 0.15;
-        discountElement.innerText = discountAmount;
-        console.log(discountAmount);
+        //hide coupon area after using 1 code
+        document.getElementById('input-field').setAttribute('disabled', true);
+        document.getElementById('apply-btn').setAttribute('disabled', true);
 
-        //grand total after discount
+        //calculate discount
+        const discountElement = document.getElementById('discount-price');
+        const discountPrice = totalPrice * 0.15;
+        discountElement.innerText = discountPrice;
+        //show discount
+        const discountDiv = document.getElementById('discount-div');
+        discountDiv.classList.add('block');
+        discountDiv.classList.remove('hidden');
+
+        //update grand total after discount
+        const grandTotalField = document.getElementById('grand-total');
+        grandTotal = totalPrice - discountPrice;
+        grandTotalField.innerText = grandTotal;
+        document.getElementById('input-field').value = '';
+    }
+    else if(couponCode === 'Couple 20'){
+        //hide coupon area after using 1 code
+        document.getElementById('input-field').setAttribute('disabled', true);
+        document.getElementById('apply-btn').setAttribute('disabled', true);
         
+        //calculate discount
+        const discountElement = document.getElementById('discount-price');
+        const discountPrice = totalPrice * 0.20;
+        discountElement.innerText = discountPrice;
+        //show discount
+        const discountDiv = document.getElementById('discount-div');
+        discountDiv.classList.add('block');
+        discountDiv.classList.remove('hidden');
+
+        //update grand total after discount
+        const grandTotalField = document.getElementById('grand-total');
+        grandTotal = totalPrice - discountPrice;
+        grandTotalField.innerText = grandTotal;
+        document.getElementById('input-field').value = '';
+    }
+    else{
+        alert('Invalid Coupon Code!'); 
+        document.getElementById('input-field').value = '';
     }
 })
 
