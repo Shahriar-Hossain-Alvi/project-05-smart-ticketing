@@ -88,17 +88,11 @@ for (let i = 0; i < seatID.length; i++) {
             }
             maxSelectedSeatCount++;
         }
-        else{
+        else {
             alert('You cannot select more than 4 seats!');
         }
     });
 }
-
-// show alert if form is not filled up
-const passengerForm = document.getElementById('passenger form');
-const passengerName = document.getElementById('passenger-name');
-const passengerPhone = document.getElementById('passenger-phone');
-const passengerMail = document.getElementById('passenger-email');
 
 
 //coupon apply part
@@ -129,7 +123,7 @@ btn.addEventListener('click', function () {
             document.getElementById('input-field').value = '';
         }
         else if (couponCode === 'Couple 20') {
-            //hide coupon area after using 1 code
+            //disable coupon area after using 1 code
             document.getElementById('input-field').setAttribute('disabled', true);
             document.getElementById('apply-btn').setAttribute('disabled', true);
 
@@ -154,25 +148,4 @@ btn.addEventListener('click', function () {
         }
     }
 })
-
-
-
-
-
-
-// on double click
-// seats.addEventListener('dblclick', function(){
-//     seats.style.backgroundColor = '#0307121A';
-//     if(flag === false){
-//         selectedSeatCounterUpdater = selectedSeatCounterUpdater;
-//         seatLeft = seatLeft;
-//     }
-//     else{
-//         selectedSeatCounterUpdater--;
-//         selectedSeatCounter.innerText = selectedSeatCounterUpdater;
-//         seatLeft++;
-//         seatLeftId.innerText = seatLeft;
-//         flag = false;
-//     }
-// });
 
