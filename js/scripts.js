@@ -97,15 +97,15 @@ for (let i = 0; i < seatID.length; i++) {
 
 //coupon apply part
 const btn = document.getElementById('apply-btn');
+
 btn.addEventListener('click', function () {
     //get input value
     const couponCode = document.getElementById('input-field').value;
 
-    if (totalPrice > 0) {
+    if (totalPrice >= 2200) {
         if (couponCode === 'NEW15') {
-            //disable coupon area after using 1 code
-            document.getElementById('input-field').setAttribute('disabled', true);
-            document.getElementById('apply-btn').setAttribute('disabled', true);
+            //hide coupon area after using 1 code
+            document.getElementById('coupon-area').classList.add('hidden');
 
             //calculate discount
             const discountElement = document.getElementById('discount-price');
@@ -147,5 +147,10 @@ btn.addEventListener('click', function () {
             document.getElementById('input-field').value = '';
         }
     }
+    else if(totalPrice < 2200) {
+        alert('select at least 4 seats!');
+        document.getElementById('input-field').value = '';
+    }
 })
+
 
